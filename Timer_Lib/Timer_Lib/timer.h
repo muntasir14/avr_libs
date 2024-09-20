@@ -11,7 +11,6 @@
 #ifndef TIMER_H_
 #define TIMER_H_
 
-
 // in TCCR2
 typedef enum {
 	NORMAL = 0,
@@ -22,14 +21,14 @@ typedef enum {
 
 // in TCCR2
 typedef enum {
-	PRESCALER_None = 0,
-	PRESCALER_1 = (1 << CS20),
-	PRESCALER_8 = (1 << CS21),
-	PRESCALER_32 = (1 << CS21) | (1 << CS20),
-	PRESCALER_64 = (1 << CS22),
-	PRESCALER_128 = (1 << CS22) | (1 << CS20),
-	PRESCALER_256 = (1 << CS22) | (1 << CS21),
-	PRESCALER_1024 = (1 << CS22) | (1 << CS21) | (1 << CS20),
+	TIMER2_PRESCALER_None = 0,
+	TIMER2_PRESCALER_1 = (1 << CS20),
+	TIMER2_PRESCALER_8 = (1 << CS21),
+	TIMER2_PRESCALER_32 = (1 << CS21) | (1 << CS20),
+	TIMER2_PRESCALER_64 = (1 << CS22),
+	TIMER2_PRESCALER_128 = (1 << CS22) | (1 << CS20),
+	TIMER2_PRESCALER_256 = (1 << CS22) | (1 << CS21),
+	TIMER2_PRESCALER_1024 = (1 << CS22) | (1 << CS21) | (1 << CS20),
 } timer2_prescaler_t;
 
 void set_timer2_mode(timer2_mode_t mode);

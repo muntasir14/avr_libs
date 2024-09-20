@@ -40,4 +40,3 @@ ISR(TIMER2_OVF_vect) {
 ISR(TIMER2_COMP_vect) {
 	if(timer2_comp_callback) timer2_comp_callback();
 }
-
